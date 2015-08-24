@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Todo</title>
+<link rel="stylesheet" type"text/css" href="/Users/apprentice/Desktop/first-backbone-js/styling/hello.css"></link>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+<script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.0/backbone.localStorage-min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+    <!-- template for view -->
+     <script type="text/template" id="item-template">
+      <div class="view">
+        <input class="toggle" type="checkbox">
+        <label><%- title %></label>
+      </div>
+    </script>
+
+
+<section id="todoapp">
+  <header id="header">
+    <h1>TODOS</h1>
+    <input id="new-todo" placeholder="New Todo">
+  </header>
+
+  <section id="main">
+    <ul id="todo-list">
+      <!-- list here -->
+    </ul>
+  </section>
+</section>
+
+
+<script type="text/javascript" src="application.js"></script>
+</body>
+</html>
